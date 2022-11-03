@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: antiquewhite;
+} */
+div#container{
+    width: 40vw;
+    border: 2px solid black;
+    /* height: 60vh; */
+    margin: auto;
+    padding: 10px;
+    margin-top: 20vh;
+    background-color: antiquewhite;
+}
+div#topbar{
+    /* background-color: aquamarine; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section#categories{
+    /* border: 2px solid blue; */
+    padding: 7px;
+    background-color: burlywood;
+    margin-top: 5px;
+}
+section#categories ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section#categories ul li{
+    font-size: medium;
+    font-weight: bold;
+    /* border: 2px solid red; */
+    padding: 2px 15px;
+    /* width: 10%; */
+}
+section#categories ul li.active{
+    transform: scale(1.2);
+    background-color: aqua;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px white;
+}
+section#categories ul li:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    /* background-color: aqua; */
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px white;
+}
+
+section#addtask{
+    padding: 20px;
+    /* background-color: ; */
+    margin-top: 5px;
+}
+#subsec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#subsec1 .subsec1item{
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+section#tasklist{
+    padding: 20px;
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 10px;
+}
+.classcreatediv{
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.createlidynamic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+}
+.createuldynamic{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+@media screen and (max-width: 700px){
+    div#container{
+        /* margin: 0; */
+        padding: 0;
+        width: 100vw;
+    }
+    #subsec1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    section#tasklist{
+        width: 100%;
+    }
+}
